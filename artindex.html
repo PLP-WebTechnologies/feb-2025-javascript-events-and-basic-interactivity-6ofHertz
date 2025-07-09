@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Art Gallery JS Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Modern Art Interactive Gallery 🎨</h1>
+  </header>
+
+  <!-- Event Handling -->
+  <section class="event-handling">
+    <button id="artButton">Click Me</button>
+    <p id="hoverText">Hover over this text for a surprise effect.</p>
+    <p>Key Pressed: <span id="keyOutput">None</span></p>
+    <p id="secretAction"></p>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+    <h2>Featured Artworks</h2>
+    <img id="galleryImage" src="https://source.unsplash.com/random/800x500?art" alt="Gallery Art" />
+    <button id="nextImage">Next Artwork</button>
+  </section>
+
+  <!-- Tabs -->
+  <section class="tabs">
+    <h2>Exhibition Sections</h2>
+    <div class="tab-buttons">
+      <button class="tabBtn" data-tab="1">Classic Art</button>
+      <button class="tabBtn" data-tab="2">Modern Art</button>
+      <button class="tabBtn" data-tab="3">Installations</button>
+    </div>
+    <div class="tabContent" id="tab1">Classic masterpieces from renowned artists.</div>
+    <div class="tabContent" id="tab2" style="display:none;">Contemporary pieces pushing boundaries.</div>
+    <div class="tabContent" id="tab3" style="display:none;">Large-scale immersive installations.</div>
+  </section>
+
+  <!-- Form -->
+  <section class="form-section">
+    <h2>Join Our Art Club</h2>
+    <form id="artForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <p id="emailFeedback"></p>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+      <p id="passwordFeedback"></p>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
